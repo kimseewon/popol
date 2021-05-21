@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/* 메인 */
+
+.main_item .main_container{
+    width: 1440px;
+    margin: 0 auto;
+
+}
+.main_item section:nth-child(2){
+    overflow: hidden;
+
+}
+
+.main_item section:nth-child(2) aside:nth-child(1){
+    float: left;
+    margin-top: 30px;
+    margin-left: 5%;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 25px;
+
+}
+
+.main_item section:nth-child(2) article{
+    float:left;
+    margin-left: 10%;
+    margin-top: 30px;
+    background-color: white;
+    margin-right: 10%;
+
+}
+
+
+.main_item section:nth-child(2) article p,strong{
+float: left;
+margin-right: 10px;
+}
+
+.main_item section:nth-child(2) article h2{
+    text-align: center;
+}
+
+.main_bucket{
+    display: inline-block;
+    width: auto !important;
+    max-width: 100%;
+    height: auto !important;
+    text-align: center;
+}
+
+#main_bucket .all_bucket {
+    background-image: url(../images/saveur.main.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main_bucket .all_bucket .txt_bucket{
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    margin: 0 auto;
+    top: 50%;
+    left: 30%;
+    height: 70px;
+    text-align: center;
+    height: 11%;
+}
+
+.main_item section:nth-child(2) article h2{
+    margin-top: -5%;
+}
+
+.main_bucket{
+    background-image: url(../images/saveur.main.jpg);
+}
+.box{position:relative; 
+    width:100%;
+    height:240px;
+    background-color:gray;
+    margin: 0 auto;
+    text-align: center;
+}
+.box h1,.box p{
+    color: white;
+}
+.box:before{
+    content:""; 
+    position:absolute; 
+    left:0; 
+    top:0; 
+    width:100%; 
+    height:100%; 
+    background-color:rgba(0,0,0,.6);
+    opacity:0; 
+    transition:0.5s all;
+} 
+.box:after{
+    content:"LET'S GO"; 
+    position:absolute; 
+    bottom:20px; 
+    left:50%; 
+    transform:translateX(-50%); 
+    width:120px; 
+    height:40px; 
+    line-height:40px; 
+    background:black; 
+    color:#fff; 
+    font-size:20px; 
+    border-radius:50%; 
+    text-align:center; 
+    transition:0.5s all;
+} 
+    .box:hover:after{
+        content:"LET'S GO"; 
+        bottom:100px; 
+        background:white;
+        color: black;
+    } .box:hover:before{
+        content:""; 
+        opacity:1;
+    } 
+    .box a{
+        position:absolute; 
+        left:0; 
+        top:0; 
+        width:100%; 
+        height:100%;
+    }
+    #slide {
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 240px;
+        margin: 0 auto;
+    }
+    
+    #slide .cnt>li {
+        position: absolute;
+        top: 0;
+        left: 300px;
+        width: 400px;
+        height: 240px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 300px;
+    }
+    
+
+    
+    #slide .btn>button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 0;
+        padding: 5px;
+    }
+    
+    #slide .btn .prev {
+        left: 5px;
+    }
+    
+    #slide .btn .next {
+        right: 5px;
+    }
+    
+    #slide .auto>button {
+        display: none;
+        position: absolute;
+        bottom: 5px;
+        border: 0;
+        padding: 5px;
+    }
+    
+    #slide .indi {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    
+    #slide .indi:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    #slide .indi>li {
+        float: right;
+        margin-left: 5px;
+        border-radius: 50%;
+        width: 400px;
+        height: 240px;
+        cursor: pointer;
+        opacity: .5;
+    }
+    
+    #slide .indi>li.on {
+        opacity: 1
+    }
+    
+    #slide .indi>li:first-child {
+        margin-left: 0
+    }
